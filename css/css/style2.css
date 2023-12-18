@@ -1,0 +1,24 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #ffefd5;   
+    color: rgb(0,0,0);
+}
+
+p {
+    color: #333;
+}
+/*
+5 ways to enter colors:
+by name, by color picker using the smal square before te color name (You can click on the hex in top of it to change the type)
+by the rgb(r,g,b) enter the value from 0 to 250
+by rgba(r,g,b,a) same thing but alpha is the capacity , chafafiya i mean, from 0 to 1
+by hex , #FFFFFF for shortcut we can use #FFF as an example , or #000 ...etc which only ones who has pairs
+by hsl(hue, saturation, lightness) eg: hsl(0,100%,50%) red , 0 = 360
+*/
+/*https: //coolors.co/contrast-checker/112a46-acc8e5
+
+https: //webaim.org/resources/contrastchecker/
+color  tools*/
+
