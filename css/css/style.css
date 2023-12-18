@@ -1,0 +1,60 @@
+* {
+    /*font-family: monospace;*/
+}
+/*universal selector and it's selecting everything in the page meaning it applies the rules on everything, typically used in css reset */
+
+body { /*appears one per page*/
+    font-size: 22px;
+    /*border: 3px solid black;*/
+} 
+/*All the elements inside the body has beed 
+effected with the font-size*/
+
+html{
+    /*appears one per page*/
+}
+/*You can use html element as well*/
+
+main { /*appears one per page*/
+    /*effects only the body ?*/
+}
+
+h2, h3 {
+    color:blue;
+}
+/*We can use a groupe of elemnts*/
+
+/*Without the comma, the css will only look for the h3 inside the h2*/
+
+p {
+    color: purple;
+}
+/*ALl the p tags is effected*/
+
+p span{ /*We looking for span inside p*/
+    /* text-transform: uppercase;
+    background-color: gold; */
+} 
+/*Non=sense, we can just name it as a calss :*/
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+/*So with classes our css is more organized and more reusable, flexible */
+
+.gray {
+    color:gray;
+}
+/*Class element can be used alot*/
+
+#second {
+    font-style: italic;
+}
+/*id used only once for a specefic element*/
+
+/*you can use the !important to force something on everything *DON'T USE IT , ONLY ONE YOU BECOME PRO**/
+
+/*
+https: //specificity.keegan.st/
+Specify calculator, why a selector is apllied over another 
+*/
