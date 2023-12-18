@@ -1,0 +1,36 @@
+/* html {
+    
+    *we don't set a font-size in the root element so the browser can handle it*
+} */
+
+/*
+body {
+    min-height: 100vh;
+}    Sometimes we need the body to cover all the contant, so to do that without limiting the content we add the min heigh and set it to 100vh
+*/
+h3 {
+    border: 2px dashed red;
+    /*using px in this situation is ok since it doesn't annoy the user when he changes the size or device*/
+    width: 50%; /*it's taking 50% of the header element since it's inside it and if the header is 50% than the h3 will take 50% of the header which takes 50% of the page , it means the h3 is taking 25% of the page*/
+    font-size: 1rem;
+    padding: 1em; /*1em here is the equivalent of the font size above it so it's 3rem*/
+} 
+
+main {
+    font-size: 2rem;
+    width: 12ch;
+    /*It sets 12 maximum charachters per line*/
+}
+
+p {
+    /*setting a font size not a good idea if the user changes the browser look to larger...etc */
+
+    font-size: 2rem;
+    /*1em is th deafault by the browser, and rem means the toor em*/
+    /*rem it looks at the root so if we use em it does 2*main saize which mains is 2*root size*/
+    /*we use em in margin or padding (in button as well we set the font in rem than the padding and margin in em) eg in h3*/
+
+} 
+
+
+
