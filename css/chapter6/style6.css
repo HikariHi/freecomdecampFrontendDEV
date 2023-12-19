@@ -12,3 +12,17 @@ body {
     font: inherit;
 } */
 
+p {
+    text-decoration: none;/* u can use this for texts from links to remove the devoration */
+
+    text-transform: capitalize; /* capialize first letter from the first words */
+
+    text-align: justify; /*words ends same line , like magazine*/
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif; /* serif often used for academic papers, sand0serif is what we usaully see in the web pages , monospace, cursive, fantasy, allf of those are fallbacks
+    */
+    /* 
+    we can use 3 as in font-family above, so the browsers uses the first one if it's not avaiable it jumps to the next and when we have a font namily whihc has a space in its name we put it inside quotes 
+    verdana, arial
+    fonts.google.com*/
+}
