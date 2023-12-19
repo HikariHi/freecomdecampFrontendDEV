@@ -7,9 +7,7 @@ body {
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: blue;
+    color: steelblue;
 
 }
 
@@ -17,12 +15,17 @@ a:visited { /* this called a sudo class or pswudo*/
     color: purple;
 }
 
-a:hover {
-    color: dodgerblue;
-}
+a:hover, a:focus { /* the focus is used when someone uses the tab instead of the mouse */
+    /* color: dodgerblue; */
+    opacity: 0.8;
+    background: lightblue;
+} /* sudo classes can do other things like changing the background */
 
 a:active {
     color: red;
 }
 /* if you put the visisted above the anchor selector, visited will still be applied because the visited has more specificity than the other */
+/* trtib mohim , trbthm kima hna lfo9 */
+
+
 
