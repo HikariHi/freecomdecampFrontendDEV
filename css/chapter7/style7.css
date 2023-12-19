@@ -7,5 +7,22 @@ body {
 }
 
 a {
-    
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+
 }
+
+a:visited { /* this called a sudo class or pswudo*/
+    color: purple;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+a:active {
+    color: red;
+}
+/* if you put the visisted above the anchor selector, visited will still be applied because the visited has more specificity than the other */
+
