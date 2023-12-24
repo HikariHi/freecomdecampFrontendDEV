@@ -9,7 +9,8 @@ body {
 /* alt-z */
 
 ol {
-    list-style-type: upper-roman; 
+    list-style-type: none;
+    padding: 0; /* Cuz it's not the default */
     /* lower-alpha list our list with alphabits 
     decimal-leading-zero adds 0 before the number
     disc looks like ul now, you can see the diffirence by the html code only
@@ -17,3 +18,17 @@ ol {
     upper-roman
     */
 }
+
+ul {
+    list-style-type: square;
+    /* disc is the default for ul */
+    text-align: center; 
+    /* the issue here is only the text goes to the center*/
+    /* TO fix it use the list-style-position: inside; */
+    list-style-position: inside;
+    /* Default is outside */
+    color: #00f; /* Everything will beocme blue not only the text */
+    line-height: 1.0;
+    
+}
+
