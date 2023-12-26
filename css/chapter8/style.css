@@ -9,7 +9,7 @@ body {
 /* alt-z */
 
 ol {
-    list-style-type: none;
+    list-style-type: lower-alpha;
     padding: 0; /* Cuz it's not the default */
     /* lower-alpha list our list with alphabits 
     decimal-leading-zero adds 0 before the number
@@ -30,6 +30,27 @@ ul {
     color: #00f; /* Everything will beocme blue not only the text */
     line-height: 1.0;
     list-style-image: url("./images/checkmark.png");/* We can use image instead of the bullet points */
-    list-style: square url("./images/checkmark.png"); /* Here we used the suaqre as a backup in case the image won't load*/
+    list-style: square url("./images/checkmark.png"); /* Here we used the suaqre as a backup in case the image won't load and this is called short hand*/
 }
 
+/* li { */
+    /* we can overwrite syles in our ul by using li bcuz we didnt specific */
+/*     color: red;
+} */
+/* But if we wanted to only change the ul we use ul li {}*/
+/* ul li:nth-child(2) {  *//* Another psuedo class which is :nth-chile(2) and it only change the second item in our list and instead of numbers we can use
+    odd,even */
+/*     color: blueviolet;
+} */
+
+ul ::marker { /* psuedo element start with :: we can change something about the marker and it's usally , bullet, latters outside of ul,numbers*/
+    /* If we want change everything back to black and keep the text in a that color we use color for the marker*/
+    color: red;
+    /* font-family: fantasy; 
+    when i use the fantasy font family the content below becomes weird iwth emojies instead of only $5 >>*/
+    font-size: 1em;
+    /* the crazy part about it is we can add content */
+    content: "Only $5 >>"; /* Now it's applied in both ul and ol to specify just add ul "as an example" before the marker */
+}
+
+/* I have a problem which is my content inside the marker function is outside the ul and not inside which means it's far away from the text in ul */
