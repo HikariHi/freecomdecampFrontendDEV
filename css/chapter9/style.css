@@ -31,8 +31,9 @@ h2 {
 }
 
 ul {
-    list-style-position:none; /*by using inside The bullets will be inside  
+    list-style-type:none; /*by using inside The bullets will be inside  
     none to remove them*/
+    /* In FireFox i had to use list-style-type instead of positon to remove those bullets */
 }
 
 li {
