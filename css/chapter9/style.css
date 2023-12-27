@@ -39,6 +39,22 @@ li {
     border-top: 1px solid #333; /* We set a border with the same color of nav,in top of each list to seperate the lists */
 }
 
+li a {
+    display: block; /* We wanted to make all the list background black when the user focus in it in so we made the li a:focus below black and now we made this to make all the list bg black not only the text */
+}
+ /* Now we want to style the link but not all links only the links are inside the list so we use li a */
+li a,
+li a:visited {
+    text-decoration: none;
+    color: #333;
+ }
+
+li a:hover,
+li a:focus {
+    background: #333;
+    color: whitesmoke;
+    cursor: pointer; /* TO change the mouse cursor */
+}
 
 
 
