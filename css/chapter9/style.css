@@ -30,3 +30,15 @@ h2 {
     border-radius: 2rem 2rem 0 0; /* We set the border of top left and top right because it's square and not match with the nv border and we set 0 to the left and right bottom corners since we need it that way*/
 }
 
+ul {
+    list-style-position:none; /*by using inside The bullets will be inside  
+    none to remove them*/
+}
+
+li {
+    border-top: 1px solid #333; /* We set a border with the same color of nav,in top of each list to seperate the lists */
+}
+
+
+
+
