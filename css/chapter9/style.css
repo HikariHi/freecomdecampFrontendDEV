@@ -6,3 +6,27 @@
     box-sizing: border-box;
 } /* To eleminate some default styles */
 
+body {
+    margin: 0.5rem; /* It pushs the text away a little bit from the top */
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+nav {
+    border: 2px solid #333;
+    border-radius: 2rem; /* The corners changed from box lesson */
+    margin: 0 auto 1rem; /* It will center it if our page is wide enough and it needs to be in the center and the padding will eat the rest of space in the "left" and the "right" 1rem maring in the bottom*/
+    max-width: 600px; /* Now our nav is not the full width of the page and it's limitted to 600px and the marging to auto on left and right has resulted centering the nav on the page */
+    /* Since we haven't styled the list item yet so we see the bullets outside the nav,
+    we centered our text but the bullets as we learned the last chapter are set to be on outside by default */
+    font-size: 3rem;
+    line-height: 7rem;
+
+}
+
+h2 {
+    padding: 1rem;
+    background-color: gold;
+    border-radius: 2rem 2rem 0 0; /* We set the border of top left and top right because it's square and not match with the nv border and we set 0 to the left and right bottom corners since we need it that way*/
+}
+
