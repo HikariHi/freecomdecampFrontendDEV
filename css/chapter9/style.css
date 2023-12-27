@@ -56,5 +56,12 @@ li a:focus {
     cursor: pointer; /* TO change the mouse cursor */
 }
 
+/* Will now when we try to foxus on the About list we will see the bg color is a square in the left and right corners */
+
+/* It's kinda hard since we need to select only the last list which is About and not the other lists so we will use a pseudo selector which is last-child */
+
+li:last-child a {
+    border-radius: 0 0 2rem 2rem;
+}
 
 
