@@ -4,4 +4,17 @@ body {
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
 }
+/* The paragraphs in HTML are block level elements and they have some default propreties*/
+
+/* We have main element cuz it's block level one */
+main {
+    background-color: aqua; /* We are covering part of the main element with the paragraphs but the part where there is marging it turned aqua*/
+    width: 50%; /* Now the paragraphs do not rxtend all the way accros the page, they are limited to their container*/
+}
+p {
+    /* background-color: lightgray; */ /* The bg color is going all the way across the page 
+    so by default it has 100% width and stack on each other, some margin "the spaces between the paragraphs"
+    and 100% width means 100% of what is avaiable for them not the view port*/
+    /* Every time we use another block level element any element not obly p, than they will stack on top each oter*/
+}
 
