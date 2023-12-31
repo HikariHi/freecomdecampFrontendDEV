@@ -5,3 +5,18 @@ body {
     font-size: 1.5rem;
 }
 
+.columns {
+    /* column-count: 4; */ /* NOw the first 4 paragraphs are in column "we applied this class on the section which contains 4 p"
+    but we we use small screen it doesn't put each paragraph of each column, it just split the text by 4 we can change it by: */
+    /* column-width: 250px; */ /* Instead of using column-count and column width there is a short hand for that:*/
+    columns: 4 250px;
+    /* We can provide dividers by: */
+    column-rule: 3px solid #333; /* just like a border */
+    column-gap: 3rem; /* Gives space between the columns */
+}
+/* If we use inspect elementwe can see default maring at the top and the bottom of each paragraph cuz we didn't use css reset 
+ofcourse we want spacing between the paragraphs but the first one has spacing aove it*/
+
+.columns p {
+    margin-top: 0; /* We didn't have double margin between p2 and p3 as example (we had top and bottom margins) becuase of margin colapsing, now we ficed the first paragraph top margin and kept the space between each paragraph*/
+}
