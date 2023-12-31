@@ -36,4 +36,3 @@ and inline elements do not stack on each other and do not create a new linem onl
 
 /* And wehn we switch to inline-blcok we kinda get a hybard where we  can keep the content inline but we can apply top and bottom margin or height and other things typacilly only block elements have*/
 /* the inline-block can be handy when we try to turn a link into a button and sometimes people do style links as buttons like wise it could be turning a list into a row instead of a virtucal list so it would be horizanal*/
-2:53:39
