@@ -1,0 +1,38 @@
+@import url('https://font.googleapis.com/css2?family-Roboto&displau=swap');
+
+body {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* What float do with our block class */
+
+.block {
+    width: 30vw; /* Didn't use the % because woudln't be same, we want to use the same unit for width and height to create a square*/
+    height: 30vw;
+    background-color: #000; /* Now we can see the square */
+    color: #fff;
+    padding: 1rem; /* Now the word float is out of the corner */
+
+}
+
+/* Now our div nad our paragraphs are block elements so they stack on top of each other
+but when we float this div element it will take it out of the normal float of the page and we would see our text rap around and you can picture this as an image but whatever content we would float and can float it left or right */
+
+.left {
+    float: left; /* Now it's more like a newspaper */ /* we need a space and we will talk about it  */
+    margin-right: 1rem;
+}
+
+.right { /* we wanted anothe reverse float, so we made anothe div and we named the class right and the margin to left bcuz of the text */
+    float: right;
+    margin-left: 1rem;
+}
+
+/* p { */
+    /* margin-left: 10px; */ /* it moves 10px ender that black square but didn't move next the p next to it as what we expected , the marging is applied from teh left and not as we expected to be for the text on the right of the square even if we use 20% it will move the text below the square and not what we expected (the text next ot the square) to fix that we can apply some to the actual block it self aka our div by using margin-right*/
+/* } */
+
+.clear {
+    clear: both; /* We want our second paragraph to start after the float so we made a class for anothe div */
+}
