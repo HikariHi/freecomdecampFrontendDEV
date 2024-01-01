@@ -27,5 +27,6 @@ ofcourse we want spacing between the paragraphs but the first one has spacing ao
     color: #fff;
     padding: 1rem;
     /* When we resize we have part of the padding on the top of the second column and the rest in in the bottom of first column*/
-    break-inside: avoid; /* To fix the issue above */
+    break-inside: avoid; /* To fix the issue above but the next topic is in the bottom of first paragraph and we want it in the top of the second one*/
+    /* break-before: column; */ /* It fixes it but when we size down to one column this is not what we expect but this is a braek before forces a column break so it forces there to be more than 1 column and the browser try to fit that in so it's not raelly good idea*/
 }
