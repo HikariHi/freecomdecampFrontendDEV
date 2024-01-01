@@ -30,3 +30,17 @@ ofcourse we want spacing between the paragraphs but the first one has spacing ao
     break-inside: avoid; /* To fix the issue above but the next topic is in the bottom of first paragraph and we want it in the top of the second one*/
     /* break-before: column; */ /* It fixes it but when we size down to one column this is not what we expect but this is a braek before forces a column break so it forces there to be more than 1 column and the browser try to fit that in so it's not raelly good idea*/
 }
+
+.columns .quote {
+    margin-top: 2rem; /* Nothing happened bcuz we used margin-top: 0; in .columns p , that's more specific than just having a class (the score of .columns p is higher than .quote "We used https: //specificity.keegan.st/") so to fix that we use .columns .quote */
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all; /*we wanted to highlight the quote, This will span all the column on the page */
+    /* Now when we size down the page the em dash and the author name becomes in diffirent lines
+    first go to html and rap teh author in a span element with a class and style the class in css*/
+}
+
+.nowrap {
+    white-space: nowrap; /* NOw the em adh and the author keepsin the same line */
+}
