@@ -9,14 +9,15 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
-    min-height: 200vh;
+    min-height: 200vh; /* for another full page that we will need */
 }
 
 .outer-container {
     border: 3px dashed #000;
     width: 75vw;
     height: 85vh;
-    margin: 40px auto;
+    margin: 40px auto; /* auto for left nad right so it centers the container */
+    position: relative; /* Read below position absolute in absolute */
 }
 
 .inner-container {
@@ -24,6 +25,7 @@ body {
     width: 40vw;
     height: 50vh;
     margin: 200px auto;
+    position: relative; /* SInce we have positoin relative in the outer and inner containers, it choose the closest one */
 }
 
 .box {
@@ -32,3 +34,15 @@ body {
     color: #fff;
     padding: 1rem;
 }
+
+.absolute {
+    background-color: #00f;
+    position: absolute; /* static is the default, using absolute don't change a thing bcuz it needs a value */
+    top: 0;/* It moved to the top of the browsr */
+    left: 0;  /* 0's are the default  */
+    /* Now the position is no longer relative to the browser windows because we used the position relative in outer-container */
+    
+    ;
+}
+
+3:40:00
