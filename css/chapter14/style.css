@@ -58,5 +58,11 @@ body {
     display: flex; /* If we make this a flex container we can set the numers to be displaied in the center of each box*/
     justify-content: center;
     align-items: center;
+    
+    /* We can use this three elements to center any element inside a contianer or the body since it consider as a container
+        display: flex;
+        justify-content: center;
+        align-items: center
+    ;*/
 }
 
