@@ -1,0 +1,55 @@
+@import url('https://font.googleapis.com/css2?family-Roboto&displau=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex; /* made it horizinal*/
+    /* gap: 1rem; */ /* gapping 1 rem from each */
+    gap:1rem;
+    justify-content: space-evenly; /* to fix the horizimal thing ,center is often used, space-around makes space even without gap
+    space-betweem
+    space-evenly better to use
+     */
+     /* align-items: center; *//* flex-start is the default, felx-end they will go to the bottom, center go to center */
+
+     align-items: center; /* flex-start Everything goes to the left bcuz our alig items become the horizonal eliment 
+     flex-end they will go left
+     with center, we might not see a difference cuz we are aking all the space with justify-content space-evenly
+     actually nothing changes cuz we took all the space
+     but if we change flex-direction to row and lets gap it as well*/
+     /* flex-direction: row; */ /* column to change the direction 
+     no space between them bcuz we removed ga and there is no more space to space out since the min height is 100 and we have 6 columns*100 so they took all the space
+    row
+    row-reverse
+    column-reverse
+    */
+    /* When minimzie the screen the boxes go outside and not staying in our container which is overflow to fix:*/
+    /* flex-wrap: wrap; */
+    /* But instead of using flex-direction nd flex-wrap we can use: */
+    flex-flow: row wrap; /* first value is the direction  */
+
+}
+
+.box {
+    min-width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
