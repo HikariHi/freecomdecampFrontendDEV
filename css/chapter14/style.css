@@ -41,6 +41,9 @@ body {
     /* flex-wrap: wrap; */
     /* But instead of using flex-direction nd flex-wrap we can use: */
     flex-flow: row wrap; /* first value is the direction  */
+    /* All this properities are on the flex container */
+    align-content: space-evenly; /* This is for the space between rows and has the value like justify-content 
+    */
 
 }
 
@@ -51,5 +54,9 @@ body {
     color: #fff;
     font-size: 2rem;
     padding: 0.5rem;
+
+    display: flex; /* If we make this a flex container we can set the numers to be displaied in the center of each box*/
+    justify-content: center;
+    align-items: center;
 }
 
