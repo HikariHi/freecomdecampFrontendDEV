@@ -40,7 +40,7 @@ body {
     /* When minimzie the screen the boxes go outside and not staying in our container which is overflow to fix:*/
     /* flex-wrap: wrap; */
     /* But instead of using flex-direction nd flex-wrap we can use: */
-    flex-flow: row wrap; /* first value is the direction  */
+    flex-flow: row nowrap; /* first value is the direction  */
     /* All this properities are on the flex container */
     align-content: space-evenly; /* This is for the space between rows and has the value like justify-content 
     */
@@ -48,7 +48,7 @@ body {
 }
 
 .box {
-    min-width: 100px;
+    /* min-width: 100px; */
     height: 100px;
     background-color: #000;
     color: #fff;
@@ -64,5 +64,21 @@ body {
         justify-content: center;
         align-items: center
     ;*/
+    /* we made them center with these 3 elements , but they still flex items inside the large flex container 
+    */
+
+    /* We commented the last 3 divs in html */
+
+    /* flex-grow: 1; */ /* If they need to grow to full up the page they will grow the same amount */
+    flex-basis: 250px; /* We commented the min-width in .box and this one giving it a min width, it's not the same as min-width but it is what it's doing in this case*/
+    flex-shrink:1;
 }
 
+.box:nth-child(2) {
+    /* flex-grow: 2; */ /* Now this one is taking more than the first but it is the double so after the 100px for each and what is left it gives the extra spaces to the one that has the flex-grow 2 
+    so it says whatever it left you take 2 for every one i take */
+    /* we need to remove the wrap settings and set it nowrap in .container*/
+
+    flex-shrink: 2; /* The second box is set to shrink more than the first one , we will see better if we makes the boxes larger like in flex-basis*/
+    /* They look to have the same size but when we shrink the page down we should see the one on the right so number 2 is smaller than number 1 bcuz of the shrink of number 2 */
+}
