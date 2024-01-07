@@ -78,3 +78,43 @@ left: -10000px; it's gone but still a part of the document (html) ans still read
 so often times when we want to remove something visible from the page but still need it in the page we use absolute
  */
 
+
+
+ /* Remember, how to make things disappear! */
+
+ /* /////////////////////////////////////// */
+
+section {
+    height: 100vh; /* all of sections */
+}
+
+
+.blue {
+    background-color: #00f;
+}
+
+.red {
+    background-color: #f00;
+}
+
+.green {
+    background-color: green;
+}
+
+header, footer { /* applied for header and footer */
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    font-size: 5rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+}
