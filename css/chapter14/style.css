@@ -40,7 +40,7 @@ body {
     /* When minimzie the screen the boxes go outside and not staying in our container which is overflow to fix:*/
     /* flex-wrap: wrap; */
     /* But instead of using flex-direction nd flex-wrap we can use: */
-    flex-flow: row nowrap; /* first value is the direction  */
+    flex-flow: row-reverse wrap; /* first value is the direction  */
     /* All this properities are on the flex container */
     align-content: space-evenly; /* This is for the space between rows and has the value like justify-content 
     */
@@ -86,7 +86,14 @@ body {
     /* They look to have the same size but when we shrink the page down we should see the one on the right so number 2 is smaller than number 1 bcuz of the shrink of number 2 
     it's the revierse of flex-grow which gives more than what it's given like 100px , this one give less if it had to below the basis */
     flex: 2 2 250px;
+    /* Uncomment the rest 4 div */
+    /* We can change the orer of it */
+    order: 0; /* It has the highest number so it went to the end and with order 0 it will be back, if we want it in the begining we use -1
+    If we are using order and somthing like row-reverse it will move to the right and that because we reversed it 
+    0 = same plcae
+    higher number = puts it to the end
+    lower than 0 = the begining*/
 }
-
-/* Uncomment the rest 4 div */
+/* We can play wround with those in
+flexboxfroggy.com */
 
